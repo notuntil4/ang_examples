@@ -1,0 +1,9 @@
+<p>voteparent works!</p>
+
+<p>Yes: {{isYes}}</p>
+<p>No: {{isNo}}</p>
+
+<div *ngFor="let voter of votedBy">
+    <app-votedetails [voters]="voter" (voted)="methodParent($event)"></app-votedetails>
+</div>
+
